@@ -1,0 +1,18 @@
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+ body {
+    font-family: 'Oxygen', sans-serif;
+ }
+ .navbar-inverse {
+    background-color: #3454bb;
+}
+ .navbar {
+    background-color: #2040ab;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #4b5a8b;
+    padding: 25px;
+  }

@@ -32,7 +32,7 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <i class="bi bi-three-dots"></i>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
@@ -41,7 +41,7 @@
 <div class="jumbotron">
   <div class="container text-center">
     <h1>AIM</h1>
-    <img src="images/istockphoto-479986424-612x612.jpg" style="width: 400px; height: 320px;">     
+    <img src="images/Docks.png" style="width: 400px; height: 320px;">     
     <p>Some text that represents "Me"...</p>
   </div>
 </div>
