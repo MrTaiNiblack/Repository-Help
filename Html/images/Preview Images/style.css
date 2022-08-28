@@ -14,12 +14,14 @@
 }
 
 .img-container {
-
+    overflow: hidden;
 }
 .img-container img{
     width: 100px;
     height: 100px;
     object-fit: cover;
+    transition: all 0.3 ease-out;
+    cursor: pointer;
 }
 
 .img-container img:hover {

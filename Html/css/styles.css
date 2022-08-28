@@ -2,6 +2,9 @@
  body {
     font-family: 'Oxygen', sans-serif;
  }
+ .jumbotron {
+    .text-center
+ }
  .navbar-inverse {
     background-color: #3454bb;
 }
@@ -13,9 +16,39 @@
   
   /* Add a gray background color and some padding to the footer */
   footer {
-    background-color: #4b5a8b;
+    background-color: #5f6e99;
     padding: 25px;
   }
   container_text-center {
     background-color: rgb(48, 130, 130);
   }
+
+/*   * {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200ox;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 200px;
+    padding: 2rem;
+}
+
+.img-container {
+    overflow: hidden;
+}
+.img-container img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: all 0.3 ease-out;
+    cursor: pointer;
+}
+
+.img-container img:hover {
+    transform: scale(1.2);
+} */
