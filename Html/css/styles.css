@@ -2,9 +2,6 @@
  body {
     font-family: 'Oxygen', sans-serif;
  }
- .jumbotron {
-    .text-center
- }
  .navbar-inverse {
     background-color: #3454bb;
 }
@@ -13,7 +10,6 @@
     margin-bottom: 0;
     border-radius: 0;
   }
-  
   /* Add a gray background color and some padding to the footer */
   footer {
     background-color: #5f6e99;
@@ -22,6 +18,9 @@
   container_text-center {
     background-color: rgb(48, 130, 130);
   }
+.m {
+    margin: 0;
+}
 
 /*   * {
     margin: 0;
