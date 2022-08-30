@@ -1,6 +1,7 @@
  /* Remove the navbar's default margin-bottom and rounded borders */ 
  body {
     font-family: 'Oxygen', sans-serif;
+    background-color: #1c3f9f5a;
  }
  .navbar-inverse {
     background-color: #3454bb;
@@ -10,6 +11,41 @@
     margin-bottom: 0;
     border-radius: 0;
   }
+  /* Home Page */
+.jumbotron {
+    margin: 0;
+    height: inherit;
+    padding: 0%;
+}
+#Filling-tile, #Feeding-tile, #Lending-tile, #Training-tile {
+   height: 250px;
+   width: 100%;
+   margin-bottom: 15px;
+   position: relative;
+   border: 2px solid #235571;
+   overflow: hidden;
+}
+#Filling-tile:hover, #Feeding-tile:hover, #Lending-tile:hover, #Training-tile:hover {
+    box-shadow: 0 1px 5px 1px;
+} 
+#Filling-tile {
+    background-image: url(/images/woman.png) no-repeat;
+    background-position: center;
+}
+#Feeding-tile {
+    background-image: url(School.png) no-repeat; 
+    background-position: center;
+}
+#Lending-tile {
+    background-image: url(/images/Hand.png) no-repeat;
+    background-position: center;
+}
+#Training-tile {
+    background-image: url(/images/Chickens.jpg) no-repeat;
+    background-position: center;
+}
+
+
   /* Add a gray background color and some padding to the footer */
   footer {
     background-color: #5f6e99;
@@ -18,51 +54,4 @@
   container_text-center {
     background-color: rgb(48, 130, 130);
   }
-  .row {
-    text-align: center;
-  } 
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  .container-image {
-    position: relative;
-    text-align: center;
-    color: black;
-  }
 
-
-/*   * {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    height: 200ox;
-    box-sizing: border-box;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    min-height: 200px;
-    padding: 2rem;
-}
-
-.img-container {
-    overflow: hidden;
-}
-.img-container img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    transition: all 0.3 ease-out;
-    cursor: pointer;
-}
-
-.img-container img:hover {
-    transform: scale(1.2);
-} */
