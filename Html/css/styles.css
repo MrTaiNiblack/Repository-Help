@@ -20,8 +20,8 @@
  }
 
  .navbar-brand {
-     font-size: 50px;
-     /*margin-top: 10px;*/
+     font-size: 25px;
+     margin-top: 10px;
  }
 
  .navbar-inverse {
@@ -33,7 +33,6 @@
      margin-bottom: 0;
      border-radius: 0;
  }
-
  #nav-list {
      margin-top: 10px;
  }
@@ -326,5 +325,7 @@
          flex-basis: 100%;
      }
  }
+ 
+
 
  /*his is for food page*/
