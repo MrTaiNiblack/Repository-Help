@@ -1,5 +1,88 @@
-// ************ CREATING OBJECTS PART 2************
-/* var company = new Object();
+******** Sting concatination **********
+// var string = "Hello";
+// string += " World";
+// console.log(string + "!"); 
+
+
+
+********* Regular Math operators *********
+// console.log((5 + 4) / 3);
+//  console.log(undefined / 5);
+
+
+******** Equality ***********
+// var x = 4, y = 4;
+// if (x == y) {
+//     console.log("x=4 is equal to y=4");
+// }
+
+// x = "4";
+// if (x == y) {
+// console.log("x='4' is equal to y=4");
+// }
+
+******** Strict Equality *************
+// if (x === y) {
+//     console.log("Strict: x='4' is equal to y=4");
+// }
+// else {
+//     console
+//     .log("Strict: x='4' is not equal to y=4");
+// }
+
+
+******** If statement is all False ********
+// if ( false || null || undefined || "" || 0 || NaN) {
+//     console.log("This line won't execute");  
+// }
+// else {                         
+//     console.log("All False")
+// }
+
+******* If statement is all True ********
+// if (true && "Tai is Cohanim" && 1 && -1 && "false") {
+//     console.log("All true");
+// }
+
+
+******* Best practice for {} style *******
+// function a()
+// {
+//     return
+//     {
+//         name: "Niblack "
+//     };
+// }
+
+// function b() {
+//     return 
+//     {
+//         name: "Niblack"
+//     };
+// }
+
+// console.log(a());
+// console.log(b());
+
+****** For Loop *********
+// var sum = 0;
+// for (var i = 0; i < 10; i++) {
+//     console.log(i);
+//     sum = sum + i;
+// }
+// console.log("sum of 0 through 9 is: " + sum);
+
+// Default Values
+function orderchickenwith(sideDish) {
+    sideDish = sideDish || "noodles or whatever"
+    console.log("Chicken with " + sideDish);
+}
+
+orderchickenwith("noodles");
+orderchickenwith();
+
+// ************ CREATING OBJECTS ************
+var company = new Object();
 company.name = "AIM";
 company.ceo = new Object();
 company.ceo.firstName = "Tai";
@@ -19,11 +102,9 @@ console.log("Stock price is: " + company["$stock of company"]);
 
 // YOU CAN ALSO DO THIS *********
 var stockPropName = "stock of company";
-company[stockPropName] = 110 */
+company[stockPropName] = 110
 
-// const { Console } = require("console");
-
-/* // ******   BETTER WAY: Object Literal ********
+// ******   BETTER WAY: Object Literal ********
 var facebook = {
     name: "Facebbok",
     ceo: {
@@ -33,11 +114,11 @@ var facebook = {
     "stock of company": 110
 };
 
-console.log(facebook); */
+console.log(facebook);
 
 //  ******* Functions are First-Class Data ********
 // ******** Functions are Objects *********
-/* function multiply (x, y) {
+function multiply (x, y) {
     return x * y; 
 }
 //console.log (multiply (5, 3)); **** Example 1 w/o bottom maybe ****
@@ -50,25 +131,24 @@ function makeMultiplier(multiplier) {
         return multiplier * x;
     };
     return myFunc; 
-} */
+}
 
-//var multiplyBy3 = makeMultiplier (3);
-//var operation = makeMultiplier(10);
-//console.log(operation(10)); // Example 2
+var multiplyBy3 = makeMultiplier (3);
+console.log(multiplyBy3(10)); // Example 2
 // example 3
-//var doubleAll = makeMultiplier (2);
-//console.log(doubleAll(100));
+var doubleAll = makeMultiplier (2);
+console.log(doubleAll(100));
 
 
 // passing functions as arguments eExample 3
-//function doOperationOn(x, operation) {
-//    return operation (x);
-//}
+function doOperationOn(x, operation) {
+    return operation (x);
+}
 
-//var result = doOperationOn (5, multiplyBy3);
-//console.log(result);
-//result = doOperationOn(100, doubleAll);
-//console.log(result);
+var result = doOperationOn (5, multiplyBy3);
+console.log(result);
+result = doOperationOn(100, doubleAll);
+console.log(result);
 
 // ********* PASssing Variables *********
 //Example 1
@@ -126,7 +206,6 @@ function makeMultiplier(multiplier) {
 // console.log("after changeObject, orig value:");
 // console.log(value); 
 
-
 // // ******** Function constructors *********
 // function Circle (radius) {
 //     this.radius = radius;
@@ -138,6 +217,7 @@ function makeMultiplier(multiplier) {
 
 // var myCircle = new Circle(10); // new Object()
 // console.log(myCircle);
+
 
 // ******* Part 2   Object Literals and "this" *********
 // Example 1
@@ -153,24 +233,24 @@ function makeMultiplier(multiplier) {
 // console.log(literalsCircle.getArea());
 
 // Example 2
-// var literalCircle = { // new Object()
-//     radius: 10,
+var literalCircle = { // new Object()
+    radius: 10,
 
-//     getArea: function() {
-//         var self = this;
-//         console.log(this);
+    getArea: function() {
+        var self = this;
+        console.log(this);
 
-//         var increaseRadius = function () {
-//             self.radius = 20;
-//         };
-//         increaseRadius();
-//         console.log(this.radius)
-// ;
-//         return Math.PI * Math.pow(this.radius, 2);
-//     }
-// };                          
+        var increaseRadius = function () {
+            self.radius = 20;
+        };
+        increaseRadius();
+        console.log(this.radius)
+;
+        return Math.PI * Math.pow(this.radius, 2);
+    }
+};
   
-// console.log(literalCircle.getArea());
+console.log(literalCircle.getArea());
 
 
 // *********** Arrays ************
@@ -242,6 +322,8 @@ function makeMultiplier(multiplier) {
 // for (var name in names2) {
 //     console.log("Hello " + names2[name])
 // } 
+
+
 // ********* CLosures *************
 function makeMultiplier (multiplier) {
             // **** var mulitplier = 2;
